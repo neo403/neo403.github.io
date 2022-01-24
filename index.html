@@ -1,0 +1,227 @@
+<! DOCTPYE html>
+<html>
+<meta property="og:description" content="Entertrainer To Hacker"/>
+<meta property="og:image" content="https://k.top4top.io/p_2122w7udh0.png"/>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark/dark.css"><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script><link href="https://wei.likeadream.repl.co/style.css" rel="stylesheet" type="text/css" /><!--<script src="https://bukadulu.likeadream.repl.co/script.js"></script>-->
+
+<head>
+
+<!-- 
+
+This code was made by Jae!
+
+Blog: https://jaexcode404.blogspot.com
+
+Instagram: @jae_kunn
+
+TikTok: Gtw
+
+-->
+
+</head>
+
+<body>
+
+<style>
+
+body{background-image: url("https://i.postimg.cc/7Y9X8WVX/IMG-20211201-090448-830.jpg");background-repeat: no-repeat;background-size: 100% 100% 100%;}
+
+</style><div id="bodyblur"></div>
+
+<div id="konten"><div id="fotoloveu"><div class="image">
+
+<!-- Foto Akhir --><img src="https://i.postimg.cc/28MgpQHY/hati.png" id="animasi" width="100px" height="100px"/></div><span id="hasiljawab"></span></div>
+
+<p class='catatan' id='koteks'>
+
+<marquee scrollamount="8" id="marq"><i id="spasi"></i>
+
+Makasi udah jawab! <i id="spasi"></i>
+
+Apapun jawabannya, kirim pesan ke WhatsApp gw ya <3</marquee>
+
+</p>
+
+<!-- Tombol WA --><div id="tombWA"><a class='button' onClick='bukaWa();'>Kirim Pesan</a></div>
+
+</div>
+
+<script>
+
+function play() {//Link Audio Bisa Diganti
+
+var audio = new Audio('https://bukadulu.likeadream.repl.co/Dandelions.mp3');audio.play();audio.loop=true;audio.addEventListener('ended', function() {this.currentTime = 0;this.play();}, false);}         
+
+//Pesan WhatsApp
+
+ function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=&text=" + window.nama + " udah liat semuanya ><" + "%0A%0A" + nama + " " + prtnya + "%0A%0A" + "Jawabannya%3A" + " *" + tnya + "*" + "%0A%0A" + "- " + dateTime;} 
+
+</script>
+
+ 
+
+<script type="text/javascript">            
+
+            var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
+
+            const swals = Swal.mixin({
+
+                backdrop: 'rgba(0,0,123,0.4)', cancelButtonColor: '#909090', allowOutsideClick: false,
+
+            });
+
+            async function mulai(){          	
+
+                var { value: nama } = await swals.fire({
+
+                    title: 'Nama kamu?',
+
+                    input: 'text',
+
+                    confirmButtonText: 'Lanjut',
+
+                    showCancelButton: false,
+
+                });                           
+
+                if(nama && nama.length < 11){
+
+                	play();
+
+                	window.nama = nama;
+
+                    await swals.fire('Hai, ' + nama + ' ツ');
+
+                    await swals.fire('Ada yang mau gw sampein');
+
+                    await swals.fire('Kita yakin nih ga chattan lagi?');
+
+                    await swals.fire('Lu mau sampe kapan cuek kayak gini?');
+
+                    await swals.fire('Plislah udahan cueknya ツ');
+
+                    await swals.fire('Gw kangen banget sama lu &#128578;');
+
+                    await swals.fire('Apalagi vibes canda tawa bareng lu ツ');
+
+                    await swals.fire('Jadi, gw mau nanya nih');
+
+                    prtnya = "gak kangen sama gw?";
+
+                    //
+
+                    window.prtnya = prtnya;
+
+                    var { value: tnya } = await swals.fire({
+
+                    imageUrl: 'https://i.postimg.cc/PJ16F73f/plis.gif',
+
+                    imageWidth: 60,
+
+                    imageHeight: 60,
+
+                    title: 'Emangnya ' + nama + ' ' + prtnya + ' &#10084;',
+
+                    input: 'text',
+
+                    confirmButtonText: 'Konfirmasi',
+
+                    showCancelButton: false,
+
+                });                           
+
+                if(tnya && tnya.length < 11){
+
+                	window.tnya = tnya;
+
+                    document.getElementById("hasiljawab").innerHTML = "Jawaban&nbsp;" + nama + ":" + "&nbsp;<b>" + tnya + "</b>";
+
+                    await swals.fire(`Thx u!`, `Sekarang lihat ini ya &#10084;&#65039;`);
+
+                    expl();StartMarquee();
+
+                } else {
+
+                    await swals.fire('Ups!', 'Tidak boleh kosong / lebih dari 10 karakter, ya!');
+
+                    mulai();
+
+                }                 
+
+                //                                   
+
+                } else {
+
+                    await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');
+
+                    mulai();
+
+                }
+
+            }            
+
+            mulai();
+
+</script>
+
+<!-- Di bawah ini JANGAN DIEDIT SEMBARANGAN -->
+
+<script>
+
+  function tombol() {document.getElementById('tombWA').style.visibility = "visible";document.getElementById('tombWA').style.opacity = "1";}  
+
+  async function expl(){document.getElementById('bodyblur').style.opacity = "1";document.getElementById('bodyblur').style.visibility = "visible";setTimeout(duar,200);}
+
+  
+
+async function duar(){
+
+var e1 = document.getElementById('animasi');e1.classList.add("degdeg");
+
+document.getElementById('konten').style.top = "0";document.getElementById('fotoloveu').style.opacity = "1";document.getElementById('fotoloveu').style.height = "170px";document.getElementById('fotoloveu').style.margin = "50px 0 0 0";document.getElementById('koteks').style.opacity = "1";
+
+setTimeout(tombol,4000);setInterval(createHeart,200);
+
+document.body.style.backgroundColor = "#000";
+
+}
+
+const body = document.querySelector("body");
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "fas fa-heart";
+
+    heart.style.left = (Math.random() * 90)+"vw";
+
+    heart.style.animationDuration = (Math.random()*3)+2+"s"
+
+    body.appendChild(heart);
+
+}
+
+setInterval(function name(params) {
+
+    var heartArr = document.querySelectorAll(".fa-heart")
+
+    if (heartArr.length > 100) {
+
+       heartArr[0].remove()
+
+    }
+
+},100);
+
+function StartMarquee(){var marquee = document.getElementById ("marq");marquee.start();}
+
+function StopMarquee(){var marquee = document.getElementById ("marq");marquee.stop();}
+
+StopMarquee();
+
+</script>
+
+</body>
+
+</html>
